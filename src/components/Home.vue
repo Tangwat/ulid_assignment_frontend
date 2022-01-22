@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>Welcome to Upperlink Digital Solution Job Application Portal!</h1>
-        <h3 v-if="count < 4">Click <a href="http://localhost:3000/applicant">here</a> to apply...</h3>
+        <h3 v-if="count < 4">Click <a href="/applicant">here</a> to apply...</h3>
         <h3 v-else>The Application Portal is Closed...</h3>
         <!-- <h3 v-if="user">Hi, {{user.first_name}}</h3>
         <h3 v-if="!user">You are not logged in!</h3> -->
