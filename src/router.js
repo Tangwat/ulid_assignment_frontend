@@ -14,7 +14,6 @@ Vue.use(Router)
 export default new Router({
     mode: 'history',
     routes: [
-        {path: '/', component: Home},
         {path: '/admin', component: Admin},
         {
             path: "/login",
@@ -37,7 +36,8 @@ export default new Router({
         {path: '/signup', component: Signup},
         {path: '/applicant', component: ApplicantRegistrationForm},
         {path: '/forgot', component: Forgot},
-        {path: '/reset/:token', component: Reset}
+        {path: '/reset/:token', component: Reset},
+        {path: '/', component: Home}
 
 
     ]
