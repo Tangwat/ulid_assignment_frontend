@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-axios.defaults.baseURL = 'http://localhost:8080/api/';
+axios.defaults.baseURL = '/api/';
 // axios.defaults.headers.common['Authorization'] = 'Bearer' + localStorage.getItem('token');
 
 export const uploadToCloudinary = (file) => {
@@ -13,7 +13,7 @@ export const uploadToCloudinary = (file) => {
     return data
 }
 
-const APPLICANT_API_BASE_URL = 'http://localhost:8080/api/applicants'
+const APPLICANT_API_BASE_URL = '/api/applicants'
 
 export const getApplicants = async () => {
     return axios.get(APPLICANT_API_BASE_URL);
