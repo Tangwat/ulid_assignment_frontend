@@ -59,7 +59,7 @@ export default {
       });
     },
     deleteApplicant(applicantId) {
-      this.axios.delete('http://localhost:8080/api/applicants/'+ applicantId).then(()=>{
+      this.axios.delete('https://ulidback.herokuapp.com/api/applicants/'+ applicantId).then(()=>{
         this.getApplicant();
       })
     }
